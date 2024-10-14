@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        nav {
+            width: 100%;
+            min-height: 20px;
+            background-color: #5996da;
+        }
+
+        .header-info {
+            width: 100%;
+            min-height: 50px;
+            background-color: #b1d5ff;
+        }
+
+        .content {
+            min-height: 250px;
+            background-color: #e9edef;
+        }
+
+        .sign-up {
+            min-height: 80px;
+            background-color: #d6e9fe;
+
+        }
+
+        .sign-up,
+        .feature {
+            justify-self: stretch;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .feature {
+            min-height: 100px;
+            background-color: #f7cd8c;
+            
+        }
+
+        .feature:nth-of-type(2n) {
+            background-color: #ed9797;
+        }
+
+        .feature:nth-of-type(3n) {
+            background-color: #c7c6f9;
+        }
+
+        .textCentered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #717f8f;
+        }
+
+        .container {
+            width: 100%;
+            display: grid;
+            grid-template-rows: 1fr;
+        }
+
+        @media screen and (min-width: 600px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+
+            main {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .container {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .sign-up {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 2;
+            }
+
+        }
+    </style>
+    <header>
+        <nav></nav>
+        <div class="header-info textCentered">HEADER</div>
+    </header>
+    <main>
+        <section class="content textCentered">
+            CONTENT
+        </section>
+        <div class="container">
+            <section class="sign-up textCentered">
+                SIGN UP
+            </section>
+            <div class="feature textCentered">FEATURE</div>
+            <div class="feature textCentered">FEATURE</div>
+            <div class="feature textCentered">FEATURE</div>
+        </div>
+    </main>
+</body>
+
+</html>

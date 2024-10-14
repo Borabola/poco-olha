@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        div {
+            padding: 5px;
+            font-weight: 700;
+            color: white;
+            border-radius: 5px;
+            background-color: #58a1af;
+        }
+
+        .container {
+            width: 100%;
+            border: 3px solid #586270;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .flex {
+            display: flex;
+            column-gap: 8px;
+        }
+
+        .flex div {
+            width: 100%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-column-gap: 8px;
+        }
+
+        .multi-column {
+            columns: 4;
+            column-gap: 8px;
+            
+        }
+    </style>
+    <h2>Flexbox</h2>
+    <section class="flex container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </section>
+
+    <h2>Grid</h2>
+    <section class="grid container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </section>
+
+    <h2>Multi-column</h2>
+    <section class="multi-column container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </section>
+</body>
+
+</html>

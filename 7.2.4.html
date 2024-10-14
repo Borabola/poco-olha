@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        nav {
+            width: 100%;
+            min-height: 20px;
+            background-color: #5996da;
+        }
+        .header-info {
+            width: 100%;
+            min-height: 50px;
+            background-color: #b1d5ff;
+        }
+
+        .content {
+            min-height: 250px;
+            background-color: #e9edef;
+        }
+
+        .sign-up {
+            min-height: 80px;
+            background-color: #d6e9fe;
+
+        }
+
+        .sign-up,
+        .feature {
+            width: 100%;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .feature {
+            min-height: 100px;
+            background-color: #f7cd8c;
+        }
+
+        .feature:nth-of-type(2n) {
+            background-color: #ed9797;
+        }
+
+        .feature:nth-of-type(3n) {
+            background-color: #c7c6f9;
+        }
+
+        .textCentered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #717f8f;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 600px) {
+            .sign-up,
+            .feature {
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            .feature {
+                width: 33%;
+                flex-grow: 1;
+            }
+
+            .sign-up {
+                width: 100%;
+                order: 4;
+            }
+            main {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+        }
+    </style>
+    <header>
+        <nav></nav>
+        <div class="header-info textCentered">HEADER</div>
+    </header>
+    <main>
+        <section class="content textCentered">
+            CONTENT
+        </section>
+        <div class="container">
+            <section class="sign-up textCentered">
+                SIGN UP
+            </section>
+            <div class="feature textCentered">FEATURE</div>
+            <div class="feature textCentered">FEATURE</div>
+            <div class="feature textCentered">FEATURE</div>
+            <!-- <ul class="feature-list">
+            <li class="feature textCentered">FEATURE</li>
+            <li class="feature textCentered">FEATURE</li>
+            <li class="feature textCentered">FEATURE</li>
+        </ul> -->
+        </div>
+    </main>
+</body>
+
+</html>
